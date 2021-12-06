@@ -17,7 +17,7 @@ function Chat({ messages ,name}) {
   const sendMessage = async (event) => {
     event.preventDefault();
 
-    await axios.post("/messages/new", {
+    await axios.post("https://connecteasy.herokuapp.com/messages/new", {
       message: input,
       name: name,
       timestamp: new Date().toLocaleString(),

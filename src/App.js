@@ -13,7 +13,7 @@ function App(props) {
   const [messages,setMessages]=useState([])
 
   useEffect(()=>{
-    axios.get('/messages/sync').then((response)=>{
+    axios.get('https://connecteasy.herokuapp.com/messages/sync').then((response)=>{
       setMessages(response.data);
       // console.log(response)
 

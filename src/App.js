@@ -23,7 +23,7 @@ function App(props) {
   },[])
 
   useEffect(()=>{
-    const pusher = new Pusher('b5904c1410ec49eb5a9f', {
+    const pusher = new Pusher('', {
       cluster: 'mt1'
     });
 
